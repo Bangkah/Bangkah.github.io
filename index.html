@@ -5,6 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Selamat Datang di Web Saya</title>
   <link rel="stylesheet" href="myblog/styles/style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header, footer {
+      background-color: #282c34;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #444;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -12,12 +51,19 @@
     <p>Selamat datang di personal website saya, semoga bermanfaat!</p>
   </header>
 
+  <nav>
+    <a href="projectweb/home.html">Beranda</a>
+    <a href="projectweb/about.html">Tentang</a>
+    <a href="projectweb/blog.html">Blog</a>
+    <a href="projectweb/contact.html">Kontak</a>
+  </nav>
+
   <main>
     <section>
       <h2>Konten Terbaru</h2>
       <p>Silakan cek halaman blog atau proyek saya untuk melihat apa yang sedang saya kerjakan.</p>
     </section>
-
+    
     <section>
       <h2>Tentang Saya</h2>
       <p>Saya sedang belajar membangun website menggunakan <strong>Jekyll</strong> dan <strong>GitHub Pages</strong>. Ini adalah proyek pribadi untuk mendokumentasikan perjalanan saya.</p>
