@@ -1,144 +1,132 @@
-/* Reset dasar */
+/* Global Reset & Font */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Header */
+.main-header {
+  background-color: #1f4068;
+  color: #fff;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.main-header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.main-header .subtitle {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+/* Content Layout */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 25%;
+  padding-right: 1.5rem;
+}
+
+.sidebar h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #1f4068;
+}
+
+.sidebar ul {
+  list-style-type: none;
+}
+
+.sidebar ul li {
+  margin-bottom: 1rem;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+}
+
+.sidebar ul li a:hover {
+  color: #ffd369;
+}
+
+/* Main Content */
+main {
+  width: 70%;
+  padding-left: 1.5rem;
+}
+
+main section {
+  margin-bottom: 3rem;
+}
+
+main h2 {
+  color: #1f4068;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+main p, main ul {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+main ul {
+  padding-left: 1.5rem;
+}
+
+main ul li {
+  list-style-type: disc;
+  margin-bottom: 0.8rem;
+}
+
+main section h3 {
+  font-size: 1.4rem;
+  color: #1f4068;
+  margin-top: 1.5rem;
+}
+
+/* Footer */
+footer {
+  background-color: #1f4068;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 0.8em 0;
   }
-  
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #f4f7f9;
-    color: #333;
-    line-height: 1.7;
-    padding: 40px 20px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  header {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  button {
-    padding: 8px 16px;
-    border: none;
-    background-color: #2980b9;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-  }
-  
-  button:hover {
-    background-color: #3498db;
-  }
-  
-  .container {
-    max-width: 900px;
-    margin: auto;
-    background: #fff;
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-    display: flex;
-  }
-  
-  .toc {
-    width: 25%;
-    margin-right: 20px;
-  }
-  
-  .toc ul {
-    list-style-type: none;
-    font-size: 1.1rem;
-  }
-  
-  .toc ul li {
-    margin-bottom: 8px;
-  }
-  
-  .toc a {
-    text-decoration: none;
-    color: #2980b9;
-  }
-  
-  .toc a:hover {
-    text-decoration: underline;
-  }
-  
+
   main {
-    width: 75%;
+    margin: 1em;
+    padding: 1.5em;
   }
-  
-  h1 {
-    font-size: 2.4em;
-    color: #2c3e50;
-    margin-bottom: 40px;
-  }
-  
-  h2 {
+
+  header h2 {
     font-size: 1.6em;
-    color: #2980b9;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 5px;
   }
-  
-  h3 {
-    font-size: 1.2em;
-    color: #34495e;
-    margin-top: 20px;
-  }
-  
-  ul {
-    padding-left: 20px;
-    margin-bottom: 20px;
-  }
-  
-  ul li {
-    margin-bottom: 8px;
-  }
-  
-  p {
-    margin-bottom: 15px;
-    text-align: justify;
-  }
-  
-  code {
-    background: #f1f1f1;
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-family: monospace;
-    color: #c0392b;
-  }
-  
-  @media screen and (max-width: 600px) {
-    body {
-      padding: 20px 10px;
-    }
-  
-    .container {
-      padding: 25px;
-      flex-direction: column;
-    }
-  
-    .toc {
-      width: 100%;
-      margin-bottom: 20px;
-    }
-  
-    h1 {
-      font-size: 2em;
-    }
-  
-    h2 {
-      font-size: 1.3em;
-    }
-  }
-  
-  /* Dark Mode */
-  body.dark-mode {
-    background-color: #2e2e2e;
-    color:
-6  }
+}

@@ -1,89 +1,83 @@
-/* Reset */
+/* Global Reset & Font */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
+  }
+  
+  body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to right, #eef2f3, #8e9eab);
-    color: #333;
-    padding: 40px 20px;
     line-height: 1.6;
-}
-
-.container {
-    background-color: #fff;
-    max-width: 800px;
+    background-color: #f8f9fa;
+    color: #333;
+    padding-bottom: 3rem;
+  }
+  
+  /* Container */
+  .container {
+    width: 90%;
+    max-width: 1000px;
     margin: auto;
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
-
-header {
+    padding: 1rem;
+  }
+  
+  /* Header */
+  header {
     text-align: center;
-    margin-bottom: 30px;
-}
-
-header h1 {
-    font-size: 2.5em;
-    color: #2c3e50;
-}
-
-.subheading {
-    font-style: italic;
+    margin: 3rem 0 2rem;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    color: #1f4068;
+  }
+  
+  .subheading {
+    font-size: 1.2rem;
     color: #555;
-    margin-bottom: 10px;
-}
-
-a {
-    color: #2980b9;
+    margin: 0.5rem 0;
+  }
+  
+  header a {
+    color: #007bff;
     text-decoration: none;
-}
-
-a:hover {
+  }
+  
+  header a:hover {
     text-decoration: underline;
-}
-
-section {
-    margin-bottom: 30px;
-}
-
-h2 {
-    color: #34495e;
-    border-bottom: 2px solid #2980b9;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-    font-size: 1.5em;
-}
-
-ul {
+  }
+  
+  /* Section Titles */
+  section h2 {
+    color: #1f4068;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-left: 6px solid #ffd369;
+    padding-left: 0.75rem;
+    font-size: 1.4rem;
+  }
+  
+  /* Lists */
+  ul {
     list-style: none;
-    padding-left: 0;
-}
-
-ul li::before {
-    content: "• ";
-    color: #2980b9;
-    font-weight: bold;
-}
-
-@media (max-width: 600px) {
-    body {
-        padding: 20px 10px;
-    }
-
-    .container {
-        padding: 20px;
-    }
-
-    header h1 {
-        font-size: 2em;
-    }
-
-    h2 {
-        font-size: 1.3em;
-    }
-}
+    padding-left: 1rem;
+  }
+  
+  ul li::before {
+    content: "•";
+    color: #ffd369;
+    margin-right: 0.5rem;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #1f4068;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 3rem;
+  }

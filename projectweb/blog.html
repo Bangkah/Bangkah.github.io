@@ -5,83 +5,116 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Perkembangan Teknologi Web dan Web Programming</title>
   <link rel="stylesheet" href="blog.css" />
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="projectweb.css">
 </head>
 <body>
-  <header>
-    <h1>Perkembangan Teknologi Web dan Web Programming</h1>
-    <button id="darkModeToggle">🌙 Dark Mode</button>
+  
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="blog.html">Blog</a>
+</nav>
+
+  </nav>
+
+  <header class="main-header">
+    <div class="container">
+      <h1>Perkembangan Teknologi Web dan Web Programming</h1>
+      <p class="subtitle">Dari era web statis hingga aplikasi web modern</p>
+    </div>
   </header>
-  <div class="container">
-    <nav class="toc">
+
+  <div class="container content">
+    <aside class="sidebar">
       <h3>Daftar Isi</h3>
       <ul>
-        <li><a href="#web1">Web 1.0 - Era Web Statis</a></li>
-        <li><a href="#web2">Web 2.0 - Era Interaktif</a></li>
-        <li><a href="#web3">Web 3.0 - Web Semantik</a></li>
+        <li><a href="#web1">Web 1.0</a></li>
+        <li><a href="#web2">Web 2.0</a></li>
+        <li><a href="#web3">Web 3.0</a></li>
         <li><a href="#modern">Web Programming Modern</a></li>
-        <li><a href="#spa">Single Page Application</a></li>
+        <li><a href="#spa">SPA</a></li>
         <li><a href="#rest">REST API</a></li>
-        <li><a href="#pwa">Progressive Web App</a></li>
+        <li><a href="#pwa">PWA</a></li>
         <li><a href="#wasm">WebAssembly</a></li>
         <li><a href="#conclusion">Kesimpulan</a></li>
       </ul>
-    </nav>
+    </aside>
 
     <main>
       <section id="web1">
         <h2>1. Web 1.0 - Era Web Statis</h2>
-        <p>Web 1.0 merupakan generasi awal dari teknologi web yang muncul pada tahun 1990-an. Web pada masa ini bersifat statis, artinya kontennya tidak dapat berubah secara dinamis tanpa modifikasi langsung pada kode HTML-nya.</p>
+        <p>Generasi awal web bersifat statis, hanya menampilkan informasi tanpa interaksi pengguna.</p>
         <ul>
-          <li>Konten hanya dapat dibaca (read-only)</li>
-          <li>Tidak ada interaksi dari pengguna</li>
-          <li>Website bersifat personal atau informasi perusahaan</li>
-          <li>Teknologi utama: HTML, gambar, hyperlink</li>
+          <li>Konten hanya dibaca</li>
+          <li>Tidak interaktif</li>
+          <li>Teknologi dasar: HTML, gambar, hyperlink</li>
         </ul>
       </section>
 
       <section id="web2">
-        <h2>2. Web 2.0 - Era Interaktif dan Dinamis</h2>
-        <p>Web 2.0 ditandai dengan munculnya aplikasi web yang memungkinkan pengguna berkontribusi secara aktif, seperti media sosial, blog, dan forum.</p>
+        <h2>2. Web 2.0 - Era Interaktif</h2>
+        <p>Pengguna mulai dapat berkontribusi lewat blog, media sosial, dan forum.</p>
         <ul>
-          <li>Konten dapat dibuat dan diubah oleh pengguna</li>
-          <li>Interaksi real-time menggunakan AJAX</li>
-          <li>Perpindahan dari halaman statis ke halaman dinamis</li>
-          <li>Penggunaan CMS (Content Management System) seperti WordPress dan Joomla</li>
-          <li>Teknologi: HTML, CSS, JavaScript, PHP, MySQL, AJAX</li>
+          <li>Konten dinamis</li>
+          <li>Penggunaan AJAX untuk real-time</li>
+          <li>CMS seperti WordPress, Joomla</li>
         </ul>
       </section>
 
       <section id="web3">
-        <h2>3. Web 3.0 - Web Semantik dan Cerdas</h2>
-        <p>Web 3.0 dikenal juga sebagai Semantic Web yang berfokus pada pemrosesan data secara lebih cerdas. Web mulai menggunakan AI dan machine learning untuk personalisasi konten.</p>
+        <h2>3. Web 3.0 - Web Semantik</h2>
+        <p>Web menjadi lebih cerdas dengan AI dan data terstruktur.</p>
         <ul>
-          <li>Pemanfaatan data terstruktur (JSON-LD, RDF)</li>
-          <li>Interkoneksi data antar aplikasi</li>
-          <li>Konten disesuaikan dengan pengguna (personalized content)</li>
-          <li>Penggunaan teknologi seperti AI, blockchain, dan Big Data</li>
+          <li>AI dan personalisasi konten</li>
+          <li>Blockchain, Big Data</li>
+          <li>JSON-LD, RDF</li>
         </ul>
       </section>
 
       <section id="modern">
         <h2>4. Web Programming Modern</h2>
-        <p>Teknologi pengembangan web modern menggabungkan frontend dan backend dengan pendekatan modular dan efisien.</p>
-
-        <h3>Frontend (Client-Side)</h3>
+        <h3>Frontend</h3>
         <ul>
-          <li>Framework: React, Angular, Vue.js, Svelte</li>
-          <li>Bahasa: HTML5, CSS3, JavaScript (ES6+)</li>
-          <li>Build tools: Webpack, Vite, Babel</li>
+          <li>React, Vue, Svelte</li>
+          <li>HTML5, CSS3, JavaScript ES6+</li>
         </ul>
-
-        <h3>Backend (Server-Side)</h3>
+        <h3>Backend</h3>
         <ul>
-          <li>Bahasa: Node.js, Python, PHP, Ruby, Java</li>
-          <li>Database: MySQL, PostgreSQL, MongoDB, Firebase</li>
-          <li>Server: Apache, Nginx, Express.js</li>
+          <li>Node.js, PHP, Python, Java, Ruby</li>
+          <li>Database: MySQL, MongoDB, Firebase</li>
         </ul>
       </section>
 
       <section id="spa">
         <h2>5. Single Page Application (SPA)</h2>
-        <p>SPA adalah jenis aplikasi web yang hanya memuat satu file HTML utama dan memperbarui konten secara dinamis menggunakan JavaScript, tanpa reload
+        <p>SPA hanya memuat satu file HTML dan memperbarui konten secara dinamis tanpa reload.</p>
+      </section>
+
+      <section id="rest">
+        <h2>6. REST API</h2>
+        <p>REST API memungkinkan pertukaran data antara client dan server secara efisien.</p>
+      </section>
+
+      <section id="pwa">
+        <h2>7. Progressive Web App (PWA)</h2>
+        <p>PWA memberikan pengalaman seperti aplikasi native yang cepat dan dapat digunakan offline.</p>
+      </section>
+
+      <section id="wasm">
+        <h2>8. WebAssembly (Wasm)</h2>
+        <p>WebAssembly memungkinkan aplikasi berat seperti game dan CAD dijalankan di browser dengan cepat.</p>
+      </section>
+
+      <section id="conclusion">
+        <h2>9. Kesimpulan</h2>
+        <p>Web telah berevolusi dari informasi statis menjadi platform interaktif dan cerdas dengan teknologi seperti SPA, PWA, dan WebAssembly.</p>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>Made with jekyll, Code, and Passion. <br>&copy; 2025 Muhammad Dhiyaul Atha.</p>
+</footer>
+</body>
+</html>
