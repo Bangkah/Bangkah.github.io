@@ -1,0 +1,83 @@
+/* Global Reset & Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+    padding-bottom: 3rem;
+  }
+  
+  /* Container */
+  .container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 1rem;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    margin: 3rem 0 2rem;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    color: #1f4068;
+  }
+  
+  .subheading {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 0.5rem 0;
+  }
+  
+  header a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  header a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Section Titles */
+  section h2 {
+    color: #1f4068;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-left: 6px solid #ffd369;
+    padding-left: 0.75rem;
+    font-size: 1.4rem;
+  }
+  
+  /* Lists */
+  ul {
+    list-style: none;
+    padding-left: 1rem;
+  }
+  
+  ul li::before {
+    content: "•";
+    color: #ffd369;
+    margin-right: 0.5rem;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #1f4068;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 3rem;
+  }

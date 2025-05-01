@@ -1,0 +1,132 @@
+/* Global Reset & Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Header */
+.main-header {
+  background-color: #1f4068;
+  color: #fff;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.main-header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.main-header .subtitle {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+/* Content Layout */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 25%;
+  padding-right: 1.5rem;
+}
+
+.sidebar h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #1f4068;
+}
+
+.sidebar ul {
+  list-style-type: none;
+}
+
+.sidebar ul li {
+  margin-bottom: 1rem;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+}
+
+.sidebar ul li a:hover {
+  color: #ffd369;
+}
+
+/* Main Content */
+main {
+  width: 70%;
+  padding-left: 1.5rem;
+}
+
+main section {
+  margin-bottom: 3rem;
+}
+
+main h2 {
+  color: #1f4068;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+main p, main ul {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+main ul {
+  padding-left: 1.5rem;
+}
+
+main ul li {
+  list-style-type: disc;
+  margin-bottom: 0.8rem;
+}
+
+main section h3 {
+  font-size: 1.4rem;
+  color: #1f4068;
+  margin-top: 1.5rem;
+}
+
+/* Footer */
+footer {
+  background-color: #1f4068;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 0.8em 0;
+  }
+
+  main {
+    margin: 1em;
+    padding: 1.5em;
+  }
+
+  header h2 {
+    font-size: 1.6em;
+  }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Atha's Personal Website</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="projectweb.css">
+</head>
+<body>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="blog.html">Blog</a>
+    </nav>
+
+    <hr>
+
+    <h1>Contact Me</h1>
+
+    <form action="contact.php" method="post">
+        <fieldset>
+            <legend>Get in Touch</legend>
+
+            <p>
+                <label for="nama">Name:</label><br>
+                <input type="text" name="name" id="nama" placeholder="Your Name..." required>
+            </p>
+
+            <p>
+                <label for="pesan">Subject:</label><br>
+                <textarea name="subject" id="pesan" placeholder="Your Message..." required></textarea>
+            </p>
+
+            <p>
+                <label for="email">Email:</label><br>
+                <input type="email" name="email" id="email" placeholder="Your Email..." required>
+            </p>
+
+            <p>
+                <input type="submit" name="kirim" value="Send">
+            </p>
+        </fieldset>
+    </form>
+
+    <hr>
+
+    <footer>
+        <p>Made with jekyll, Code, and Passion. <br>&copy; 2025 Muhammad Dhiyaul Atha.</p>
+    </footer>
+</body>
+</html>
