@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Contact - Atha's Personal Website</title>
     <link rel="stylesheet" href="contact.css">
-    <link rel="stylesheet" href="projectweb.css">
 </head>
 <body>
     <nav>
         <a href="home.html">Home</a>
         <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="active">Contact</a>
         <a href="blog.html">Blog</a>
     </nav>
 
@@ -19,9 +18,12 @@
 
     <h1>Contact Me</h1>
 
-    <form action="contact.php" method="post">
+    <form action="https://getform.io/f/apjnqxda" method="POST">
         <fieldset>
             <legend>Get in Touch</legend>
+
+            <!-- Anti-spam honeypot -->
+            <input type="text" name="_gotcha" style="display:none">
 
             <p>
                 <label for="nama">Name:</label><br>
@@ -39,7 +41,7 @@
             </p>
 
             <p>
-                <input type="submit" name="kirim" value="Send">
+                <input type="submit" value="Send">
             </p>
         </fieldset>
     </form>
@@ -47,7 +49,7 @@
     <hr>
 
     <footer>
-        <p>Made with jekyll, Code, and Passion. <br>&copy; 2025 Muhammad Dhiyaul Atha.</p>
+        <p>Made with Jekyll, Code, and Passion. <br>&copy; 2025 Muhammad Dhiyaul Atha.</p>
     </footer>
 </body>
 </html>
