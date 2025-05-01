@@ -1,83 +1,138 @@
-/* Global Reset & Font */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  animation: fadeIn 1s ease-in;
+}
+
+nav {
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  text-align: center;
+  padding: 1em 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  animation: slideDown 0.8s ease-in-out;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1.2em;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffd369;
+  transform: scale(1.05);
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px 20px;
+  animation: fadeInUp 1s ease;
+}
+
+header h1 {
+  margin-bottom: 0.3em;
+}
+
+header p.subheading {
+  font-style: italic;
+  color: #666;
+}
+
+section {
+  background-color: #fff;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  opacity: 0;
+  transform: translateY(30px);
+  animation: sectionFadeIn 0.8s ease forwards;
+}
+
+section:nth-child(1) { animation-delay: 0.2s; }
+section:nth-child(2) { animation-delay: 0.4s; }
+section:nth-child(3) { animation-delay: 0.6s; }
+section:nth-child(4) { animation-delay: 0.8s; }
+section:nth-child(5) { animation-delay: 1s; }
+
+h2 {
+  border-left: 6px solid #2a5298;
+  padding-left: 12px;
+  color: #2a5298;
+}
+
+ul {
+  padding-left: 1.2em;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #2a5298;
+  color: white;
+  margin-top: 40px;
+  animation: fadeIn 3s ease-in;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 10px 0;
   }
-  
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    background-color: #f8f9fa;
-    color: #333;
-    padding-bottom: 3rem;
-  }
-  
-  /* Container */
-  .container {
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
-    padding: 1rem;
-  }
-  
-  /* Header */
-  header {
-    text-align: center;
-    margin: 3rem 0 2rem;
-  }
-  
+
   header h1 {
-    font-size: 2.5rem;
-    color: #1f4068;
+    font-size: 1.6em;
   }
-  
-  .subheading {
-    font-size: 1.2rem;
-    color: #555;
-    margin: 0.5rem 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
   }
-  
-  header a {
-    color: #007bff;
-    text-decoration: none;
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
-  
-  header a:hover {
-    text-decoration: underline;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
   }
-  
-  /* Section Titles */
-  section h2 {
-    color: #1f4068;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    border-left: 6px solid #ffd369;
-    padding-left: 0.75rem;
-    font-size: 1.4rem;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  /* Lists */
-  ul {
-    list-style: none;
-    padding-left: 1rem;
+}
+
+@keyframes sectionFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  ul li::before {
-    content: "•";
-    color: #ffd369;
-    margin-right: 0.5rem;
-  }
-  
-  /* Footer */
-  footer {
-    background-color: #1f4068;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    font-size: 0.9rem;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    margin-top: 3rem;
-  }
+}
